@@ -10,8 +10,10 @@ sandclock{
         }
         g[id=GauxCarl1777]{
             male,
-            name={Johann \pref{Carl Friedrich} \surn{Gau\ss{}}},
-            birth={1777-04-30}{Braunschweig (Niedersachsen)},
+%            name={Johann \pref{Carl Friedrich} \surn{Gau\ss{}}},
+            name={조안 \pref{칼 프레드릭} \surn{가우스}},
+%            birth={1777-04-30}{Braunschweig (Niedersachsen)},
+            birth={1777년 4월 30일}{Braunschweig (Niedersachsen)},
             death={1855-02-23}{G\"ottingen (Niedersachsen)},
             profession={Mathematiker, Astronom, Geod\"at und Physiker},
             image={Carl_Friedrich_Gauss.jpg},
