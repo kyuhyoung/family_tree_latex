@@ -1,0 +1,21 @@
+FROM ubuntu:22.04
+ARG DEBIAN_FRONTEND=noninteractive
+RUN apt-get update -y
+#RUN apt install texlive-latex-extra -y
+#RUN apt install texlive-full -y
+#RUN apt-get install software-properties-common -y
+#RUN add-apt-repository ppa:texlive-backports/ppa
+#RUN apt-get update -y
+#RUN apt-get install texlive-full
+RUN apt-get install libgl1-mesa-dri -y
+#RUN apt-get install texmaker -y
+RUN apt-get install gedit -y
+#RUN apt-get install texstudio -y
+RUN echo "export QT_LOGGING_RULES='*.debug=false;*.debug=false;qt.qpa.xcb.xcberror.warning=false;qt.qpa.xcb.xcberror.error=false;qt.qpa.xcb.warning=false;qt.qpa.xcb.error=false;qt.qpa.xcb=false'" >> ~/.bashrc
+RUN apt-get install wget -y
+RUN cd /tmp && wget https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz && zcat install-tl-unx.tar.gz | tar xf - && cd install-tl-* && perl ./install-tl --no-interaction 
+RUN echo "export PATH=/usr/local/texlive/2022/bin/x86_64-linux:$PATH" >> ~/.bashrc
+#RUN ls /usr/local/texlive/
+#RUN ls /usr/local/texlive/2022/bin/PLATFORM
+RUN export PATH=/usr/local/texlive/2022/bin/x86_64-linux:$PATH && tlmgr init-usertree && tlmgr update genealogytree
+CMD ["bash"]
