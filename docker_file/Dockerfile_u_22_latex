@@ -18,4 +18,5 @@ RUN echo "export PATH=/usr/local/texlive/2022/bin/x86_64-linux:$PATH" >> ~/.bash
 #RUN ls /usr/local/texlive/
 #RUN ls /usr/local/texlive/2022/bin/PLATFORM
 RUN export PATH=/usr/local/texlive/2022/bin/x86_64-linux:$PATH && tlmgr init-usertree && tlmgr update genealogytree
+#RUN apt-get install fish -y
 CMD ["bash"]
