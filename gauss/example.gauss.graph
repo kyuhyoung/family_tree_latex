@@ -16,7 +16,7 @@ sandclock{
             birth={1777년 4월 30일}{Braunschweig (Niedersachsen)},
             death={1855-02-23}{G\"ottingen (Niedersachsen)},
             profession={Mathematiker, Astronom, Geod\"at und Physiker},
-            image={Carl_Friedrich_Gauss.jpg},
+            image={pics/Carl_Friedrich_Gauss.jpg},
         }
         c[id=GauxCarl1806]{
             male,

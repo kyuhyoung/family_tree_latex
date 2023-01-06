@@ -1,0 +1,21 @@
+sandclock{
+    child{
+        g[male]{Husband}
+        p[female]{Wife1}
+        c[female]{childw1}
+        % c[male]{a_4}
+        % c[female]{a_5}
+        union[id=fam_2]{
+            p[id=wife2,female]{Wife2}
+            c[id=childw2,female]{childw2}
+            % c[id=nd3,male]{d_3}
+            % c[id=nd4,male]{d_4}
+        }
+        union[id=fam_3]{
+            p[id=wife3,female]{Wife3}
+            c[id=childw3,female]{childw3}
+            % c[id=nd3,male]{d_3}
+            % c[id=nd4,male]{d_4}
+        }
+    }
+}

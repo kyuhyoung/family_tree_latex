@@ -1,0 +1,11 @@
+\documentclass{article}
+%\usepackage{genealogypicture}
+\usepackage{kotex}
+\usepackage[all]{genealogytree}
+\begin{document}
+    \begin{genealogypicture}[template=database portrait, 
+        options for node={wife2, childw2}{box={colback=green!20!white}},
+        options for node={wife3, childw3}{box={colback=blue!20!white}}]
+        input{multi_wives.graph}
+    \end{genealogypicture}
+\end{document}
